@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Utrecht Houses Retail values</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body style="background: #000;">
+ <div class="login">
+	<h1>Retail value Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="zipcode" placeholder="zipcode" required="required" />
+        <input type="text" name="plot of land lenght in meters" placeholder="plot of land lenght in meters" required="required" />
+		<input type="text" name="Total area of plot of land in square meters" placeholder="Total area of plot of land in square meters" required="required" />
+		<input type="text" name="living area of the house area in square meters" placeholder="living area of the house area in square meters" required="required" />
+		<input type="text" name="the garden size in square meters" placeholder="garden size in square meters" required="required" />
+		<input type="text" name="y-coordinate location of the house" placeholder="y-coordinate location of the house" required="required" />
+		<input type="text" name="is the house energy efficient (0 = no, 1 = yes)" placeholder="is the house energy efficient (0 = no, 1 = yes)" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict retail value of the house</button>
+    </form>
+	
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+</body>
+</html>

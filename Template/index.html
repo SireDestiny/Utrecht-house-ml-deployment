@@ -1,0 +1,30 @@
+<html >
+<head>
+  <title>Predict house retail value</title>  
+</head>
+
+<body>
+ <div>
+	<h1>Predict Retail value</h1>
+
+    <form action="{{ url_for('getprediction')}}"method="post">
+    	<input type="text" name="Zipcode" placeholder="Zipcode" required="required" />
+        <input type="text" name="Plot of land lenght in meters" placeholder="Plot of land lenght in meters" required="required" />
+		<input type="text" name="Total area of plot of land in square meters" placeholder="Total area of plot of land in square meters" required="required" />
+		<input type="text" name="Living area of the house area in square meters" placeholder="Living area of the house area in square meters" required="required" />
+		<input type="text" name="The garden size in square meters" placeholder="Garden size in square meters" required="required" />
+		<input type="text" name="Y-coordinate location of the house" placeholder="Y-coordinate location of the house" required="required" />
+		<input type="text" name="Is the house energy efficient (0 = no, 1 = yes)" placeholder="Is the house energy efficient (0 = no, 1 = yes)" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict retail value of the house</button>
+        <button type="submit" class="btn btn-primary btn-block btn-large">getprediction</button>
+    </form>
+
+   <br>
+   <br>
+   {{ output }}
+
+ </div>
+
+
+</body>
+</html>
