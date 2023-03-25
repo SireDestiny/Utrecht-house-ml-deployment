@@ -1,0 +1,1 @@
+This project is an exploratory, descriptive, and predictive analysis, of houses in Utrecht, Netherlands. A Machine learning model was trained to predict house retail values, and the model was deployed as a fast API application
