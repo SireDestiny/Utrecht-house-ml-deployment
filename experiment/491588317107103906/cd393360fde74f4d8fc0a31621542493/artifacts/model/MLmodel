@@ -1,0 +1,25 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.2
+mlflow_version: 2.2.2
+model_uuid: d7e9500da2284faf81d79baa2176bed5
+run_id: cd393360fde74f4d8fc0a31621542493
+signature:
+  inputs: '[{"name": "zipcode", "type": "long"}, {"name": "lot_len", "type": "double"},
+    {"name": "lot_area", "type": "long"}, {"name": "house_area", "type": "long"},
+    {"name": "garden_size", "type": "long"}, {"name": "y_coor", "type": "long"}, {"name":
+    "energy_eff", "type": "long"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2023-03-28 11:05:06.925562'
