@@ -4,5 +4,5 @@ The whole project entailing all imports, training, testing, the deployed app and
 
 Note: To see the full EDA, the whole Python Notebook can be explored at https://nbviewer.org/github/SireDestiny/Utrecht-house-ml-deployment/blob/master/Uthrecht%20house.ipynb
 
-The test of the deployment can be seen at https://github.com/SireDestiny/Utrecht-house-ml-deployment/blob/master/utrecht%20house%20testing.ipynb
+The test of the deployed model can be seen at https://github.com/SireDestiny/Utrecht-house-ml-deployment/blob/master/utrecht%20house%20testing.ipynb
 
