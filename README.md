@@ -1,7 +1,7 @@
+## Tomi
+==============================
 # Uthrecht house retail value prediction and deployment
 
-
-==============================
 This project is an exploratory, descriptive, and predictive analysis of houses in Utrecht, Netherlands. A Machine learning model was trained and deployed to predict house retail values, and the model was deployed as a fast API application.
 
 The whole project entailing all imports, training, testing, the deployed app and real-time inference can be seen at https://github.com/SireDestiny/Utrecht-house-ml-deployment/blob/master/Uthrecht%20house.ipynb
@@ -34,7 +34,14 @@ Project Organization
 │
 ├── setup.py           <- makes project pip installable (pip install -e .)  
 ├── src                <- Source code for use in this project.
-│   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-│       └── visualize.py
-│
-└── tests            <- unit tests
+│   │
+│   ├─ App           
+│   │  └── app.py      <- Scripts to build the application
+│   │
+│   ├─ Scoring script  <- Scripts to train and make inference 
+│   │  └── train.py
+│   │
+│   └─ visualization  
+│      └──Importance   <-  exploratory and results oriented visual of the feature importance
+└── tests            
+    └──test.py         <- unit tests for codes 

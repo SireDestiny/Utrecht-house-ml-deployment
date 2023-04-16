@@ -1,0 +1,23 @@
+Description about the variables.
+
+id:   Unique identifier for each house
+
+zipcode:   Zip codes 3520 tp 3800.
+
+lot-len:   Length in meters of the plot of land the house is built on.
+
+lot-width:   The width in meters of the plot of land the house is built on. 
+
+lot-area:   The total area of the plot of land the house is built on. 30.0 square meters is a tiny house, 200.0 square meters would be a mansion.
+
+garden-size:   The size of the garden in square meters. 
+
+balcony:   The number of balconies the house has. 
+
+x-coor:   The x-coordinate describing the location of the house.
+
+y-coor:   The y-coordinate describing the location of the house.
+
+buildyear:   The year that the house was built. 
+
+bathrooms:   The number of bathrooms in the house.
