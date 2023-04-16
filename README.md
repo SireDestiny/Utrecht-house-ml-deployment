@@ -34,16 +34,14 @@ Directory structure of the project
 │                         generated with `pip freeze > requirements.txt`
 │
 ├── setup.py           <- makes project pip installable (pip install -e .)  
-├── src                <- Source code for use in this project.
-│   │
-│   ├─ App           
-│   │  └── app.py      <- Scripts to build the application
-│   │
-│   ├─ Scoring script  <- Scripts to train and make inference 
-│   │  └── train.py
-│   │
-│   └─ visualization  
-│      └──Importance   <-  exploratory and results oriented visual of the feature importance
-└── tests            
-    └──test.py         <- unit tests for codes 
+└── src                <- Source code for use in this project.
+    │
+    ├─ App           
+    │  └── app.py      <- Scripts to build the application
+    │
+    ├─ Scoring script  <- Scripts to train and make inference 
+    │  └── train.py
+    │
+    └─ visualization  
+       └──Importance   <-  exploratory and results oriented visual of the feature importance
 ```
