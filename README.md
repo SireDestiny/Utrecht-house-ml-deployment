@@ -10,7 +10,7 @@ Note: To see the full EDA, the whole Python Notebook can be explored at https://
 
 The test of the deployed model can be seen at https://github.com/SireDestiny/Utrecht-house-ml-deployment/blob/master/utrecht%20house%20testing.ipynb
 
-Project Organization
+Directory structure of the project
 ------------
 ```
 ├── LICENSE
