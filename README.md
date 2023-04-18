@@ -4,11 +4,11 @@
 
 This project is an exploratory, descriptive, and predictive analysis of houses in Utrecht, Netherlands. A Machine learning model was trained and deployed to predict house retail values, and the model was deployed as a fast API application.
 
-The whole project entailing all imports, training, testing, the deployed app and real-time inference can be seen at https://github.com/SireDestiny/Utrecht-house-ml-deployment/blob/master/Uthrecht%20house.ipynb
+The whole project entailing all imports, training, testing, the deployed app and real-time inference can be seen at https://github.com/SireDestiny/Utrecht-house-ml-deployment/blob/master/Structure/notebooks/Uthrecht%20house.ipynb
 
-Note: To see the full EDA, the whole Python Notebook can be explored at https://nbviewer.org/github/SireDestiny/Utrecht-house-ml-deployment/blob/master/Uthrecht%20house.ipynb
+Note: To see the full EDA, the whole Python Notebook can be explored at https://nbviewer.org/github/SireDestiny/Utrecht-house-ml-deployment/blob/master/Structure/notebooks/Uthrecht%20house.ipynb
 
-The test of the deployed model can be seen at https://github.com/SireDestiny/Utrecht-house-ml-deployment/blob/master/utrecht%20house%20testing.ipynb
+The test of the deployed model can be seen at https://github.com/SireDestiny/Utrecht-house-ml-deployment/blob/master/Structure/notebooks/utrecht%20house%20testing.ipynb
 
 Directory structure of the project
 ------------
@@ -23,9 +23,7 @@ Directory structure of the project
 │
 ├── models             <- Trained and serialized model
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- Jupyter notebooks
 │
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 │   └── figures        <- Generated graphics and figures to be used in reporting
@@ -37,10 +35,10 @@ Directory structure of the project
 └── src                <- Source code for use in this project.
     │
     ├─ App           
-    │  └── app.py      <- Scripts to build the application
+    │  └── app.py      <- Script to build the FastAPI application
     │
-    ├─ Scoring script  <- Scripts to train and make inference 
-    │  └── train.py
+    ├─ Scoring script  
+    │  └── train.py    <- Script to train and make inference 
     │
     └─ visualization  
        └──Importance   <-  exploratory and results oriented visual of the feature importance
